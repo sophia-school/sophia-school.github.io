@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; img-src 'self' file: data: blob:; media-src 'self' file: blob:; style-src 'self' file: 'unsafe-inline'; script-src 'self' file:; font-src 'self' file:; connect-src 'none'; frame-src 'none'; object-src 'none'">
+<title>Sophia School</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <a class="logo" href="#/cour">sophia<span>·</span>school</a>
+    <nav class="crumbs" id="crumbs" aria-label="Où je suis"></nav>
+    <button class="me" id="open-profile" aria-label="Mon profil"><span class="av" id="me-av"></span><span id="me-name">Mon profil</span></button>
+  </header>
+
+  <main class="stage">
+    <div id="scene"></div>
+    <div class="guide" aria-live="polite">
+      <svg class="owl" viewBox="0 0 100 100" aria-hidden="true">
+        <ellipse cx="50" cy="60" rx="34" ry="34" fill="#9b7a5a" stroke="#2a2240" stroke-width="4"/>
+        <path d="M22 36 L18 14 L36 28 M78 36 L82 14 L64 28" fill="#9b7a5a" stroke="#2a2240" stroke-width="4" stroke-linejoin="round"/>
+        <ellipse cx="50" cy="72" rx="20" ry="18" fill="#f3dcc0"/>
+        <circle cx="36" cy="50" r="14" fill="#fff" stroke="#2a2240" stroke-width="3"/><circle cx="64" cy="50" r="14" fill="#fff" stroke="#2a2240" stroke-width="3"/>
+        <circle cx="38" cy="52" r="7.5" fill="#2a2240"/><circle cx="66" cy="52" r="7.5" fill="#2a2240"/>
+        <circle cx="41" cy="48" r="2.8" fill="#fff"/><circle cx="69" cy="48" r="2.8" fill="#fff"/>
+        <path d="M45 62 L50 71 L55 62 Z" fill="#ffc04d" stroke="#2a2240" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M28 30 Q36 26 44 32 M56 32 Q64 26 72 30" stroke="#2a2240" stroke-width="3" fill="none"/>
+        <ellipse cx="26" cy="66" rx="5" ry="3" fill="#ff8fbf" opacity=".7"/><ellipse cx="74" cy="66" rx="5" ry="3" fill="#ff8fbf" opacity=".7"/>
+      </svg>
+      <div class="bubble"><b>PIP, LE GUIDE</b><span id="guide-text"></span></div>
+    </div>
+  </main>
+
+  <nav class="rooms" id="rooms" aria-label="Dans ce lieu"></nav>
+  <footer class="note">Sophia School · version 0.1.0 · fonctionne sans connexion, rien ne quitte cet appareil · <a href="LICENCES.txt">licences</a></footer>
+</div>
+
+<div class="veil" id="veil" hidden><div class="win" role="dialog" aria-modal="true" aria-labelledby="win-title"><header><h2 id="win-title"></h2><button class="x" id="win-close" aria-label="Fermer">×</button></header><div class="body" id="win-body"></div></div></div>
+<aside class="drawer" id="drawer" hidden aria-label="Mon profil"></aside>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="contenus/contenus.js"></script>
+<script src="moteur.js"></script>
+<script src="sophia-school.js"></script>
+</body>
+</html>

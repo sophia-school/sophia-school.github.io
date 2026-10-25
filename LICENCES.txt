@@ -1,0 +1,16 @@
+Sophia School
+
+Code : licence MIT (voir LICENSE dans le dépôt).
+Contenus produits par le projet : CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/deed.fr
+Chaque ressource indique sa source et sa licence dans l'application.
+
+Polices « Mochiy Pop One » et « M PLUS Rounded 1c » : SIL Open Font License 1.1, https://openfontlicense.org
+
+Ressources de cette version (source — licence) :
+- Sophia School — CC BY-SA 4.0
+
+Liens vers d'autres sites (rien n'est copié ; leurs contenus restent la propriété de leurs auteurs) :
+- Chaîne YouTube PCCL (pccl.fr)
+- pccl.fr
+
+Lecture des leçons : voix de synthèse Pocket TTS (Kyutai, modèle sous licence CC BY 4.0, https://huggingface.co/kyutai/pocket-tts), voix « Estelle » (CC0). Ce n'est pas la voix d'une personne réelle.
